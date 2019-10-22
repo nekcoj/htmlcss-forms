@@ -1,0 +1,13 @@
+.login-form p {
+    margin-bottom: 0;
+}
+
+.login-form section {
+    margin: 10px 0;
+}
+
+.login-form #failed-login-msg {
+    color: red;
+    font-size: 12px;
+    /* display: none; */
+}
