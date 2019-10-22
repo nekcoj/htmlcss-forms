@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    border:0;
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(to top left, #6d053e, #47057e)
+}
+
+.login-form *{
+    color: white;
+}
+
+.login-form p{
+    margin-bottom: 0;
+}
+
+.login-form section{
+    display: flex;
+    width: 20vw;
+    position: relative;
+    margin: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+.login-form input{
+    box-shadow: 0 0;
+    font-size: 14px;
+    background: transparent;
+    border-left:0;
+    border-top:0;
+    border-right:0;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+.login-form #failed-login-msg{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.login-form input[required]:valid{
+    border-bottom-color: yellowgreen;
+}
+.login-form label{
+    transition: top 200ms ease-out, font-size 200ms, opacity 200ms;
+    position: absolute;
+    outline:none;
+    opacity: 0.5;
+    top:0;
+    font-size: 12px;
+    left: 2px;
+    user-select: none;
+}
+
+.login-form input:not(:placeholder-shown) + label{
+    top: -8px;
+    opacity: 0.8;
+    font-size: 10px;
+    
+}
+.login-form button{
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    outline:none;
+}
+#about, #favorite-weekday {
+    /*color: black;*/
+    background: transparent;
+    border: 1px solid white;
+}
+.rabbit, .spider, .snake, .dog{
+    display: block;
+    position: relative;
+}
