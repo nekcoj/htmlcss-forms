@@ -36,13 +36,6 @@
         </section>
         
         <section>
-            <div>
-                <span id="failed-login-msg">Wrong username or password!</span>
-            </div>
-            <button type="submit">Submit</button>
-        </section>
-             
-        <section>
             <select id="favorite-weekday">
                 <option value="mon">Monday</option>
                 <option value="tue">Tuesday</option>
@@ -63,29 +56,36 @@
             <textarea id="about" placeholder="Write a short presentation of yourself" maxlength="280"></textarea> 
         </section>
 
-        <section>
-            <label for="rabbit">
-                <input type="checkbox" id="rabbit">
-            </label>
-            
-            <label for="snake">
-                <input type="checkbox" id="snake">
-            </label>
-            
-            <label for="spider">
-                <input type="checkbox" id="spider">
-            </label>
-            
-            <label for="dog">
-                <input type="checkbox" id="dog">
-            </label>
+        <section id="checkboxes">
+            <section id="animals">
+                <label for="rabbit">
+                    <input type="checkbox" id="rabbit">Rabbit
+                </label>
+            </section>
+            <section id="animals">
+                <label for="snake">
+                    <input type="checkbox" id="snake">Snake
+                </label>
+            </section>
+            <section id="animals">
+                <label for="spider">
+                    <input type="checkbox" id="spider">Spider
+                </label>
+            </section>
+            <section id="animals">
+                <label for="dog">
+                    <input type="checkbox" id="dog">Dog
+                </label>
+            </section>            
         </section>
 
-        <section>
+        <section id="favourite-color">
             <input type="radio" id="red" name="color-choice">
+            <label for="red">Red</label>
             <input type="radio" id="blue" name="color-choice">
+            <label for="blue">Blue</label>
             <input type="radio" id="green" name="color-choice">
-
+            <label for="green">Green</label>
         </section>
 
         <section>
@@ -94,6 +94,3 @@
     </form>
 </body>
 </html>
-    
-    
-    
